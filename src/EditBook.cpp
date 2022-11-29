@@ -57,7 +57,7 @@ bool sortDesc(string a, string b)
 
 //count the length of the ID of a book
 //example: 20 will be counted as 2 digits
-int countDigit (long long n)
+int countDigit(long long n)
 {
     if (n == 0)
         return 1;

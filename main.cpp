@@ -4,10 +4,12 @@
 #include "SecuritySys.h"
 #include "AppUI.h"
 #include "EditBook.h"
+#include "OrderSys.h"
 
 AppUI UI;
 SecuritySys SecSysFunc;
 EditBook BookFunc;
+OrderSys OrderFunc;
 
 using namespace std;
 

@@ -11,6 +11,7 @@ class AppUI
         void ViewBook();
         void DeleteBook();
         void SearchBook();
+        void OrderBook();
 
     private:
 };

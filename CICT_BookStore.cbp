@@ -36,10 +36,12 @@
 		</Compiler>
 		<Unit filename="include/AppUI.h" />
 		<Unit filename="include/EditBook.h" />
+		<Unit filename="include/OrderSys.h" />
 		<Unit filename="include/SecuritySys.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/AppUI.cpp" />
 		<Unit filename="src/EditBook.cpp" />
+		<Unit filename="src/OrderSys.cpp" />
 		<Unit filename="src/SecuritySys.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />

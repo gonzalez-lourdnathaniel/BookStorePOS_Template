@@ -10,9 +10,11 @@
 #include "SecuritySys.h"
 #include "AppUI.h"
 #include "EditBook.h"
+#include "OrderSys.h"
 
 extern SecuritySys SecSysFunc;
 extern EditBook BookFunc;
+extern OrderSys OrderFunc;
 
 using namespace std;
 
@@ -77,7 +79,8 @@ void AppUI::MainMenu()
     cout << "1. Add Books" << endl;
     cout << "2. Search Books" << endl;
     cout << "3. View Books" << endl;
-    cout << "4. Delete Books" << endl << endl;
+    cout << "4. Delete Books" << endl;
+    cout << "5. Order Books" << endl << endl;
     cout << "0. Exit";
 
     cout << "\n\nEnter Option: ";
@@ -98,6 +101,10 @@ void AppUI::MainMenu()
     else if(opt == "4")
     {
         BookFunc.DeleteBook();
+    }
+    else if(opt == "5")
+    {
+        OrderFunc.OrderBook();
     }
     else if(opt == "0")
     {
@@ -167,4 +174,18 @@ void AppUI::SearchBook()
     TitleHeader();
     setTxtColor(10);
     PageTitle("Search Book");
+}
+
+void AppUI::OrderBook()
+{
+    //variable declarations
+    string  h1 = "Book Title", h2 = "Quantity";
+    system("CLS");
+    TitleHeader();
+    setTxtColor(10);
+    PageTitle("Search Book");
+
+    cout << "+" << std::string(70-1, '-') << "+" << endl;
+    cout << "| " << h1 << setw((50 - 1) - h1.length()) << "|" << setw((20/2) + h2.length()/2) << h2 << setw((20/2) - h2.length()/2) << "|" << endl;
+    cout << "+" << std::string(70-1, '-') << "+" << endl;
 }
